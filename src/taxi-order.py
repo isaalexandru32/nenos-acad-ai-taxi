@@ -8,11 +8,4 @@ class Order(BaseModel):
     price: int
     client: Client
     car: Car
-
-
-    def __init__(self, status, price):
-        self.status = status
-        self.price = price
-
-
         

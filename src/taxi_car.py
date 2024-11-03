@@ -7,9 +7,3 @@ class Car(BaseModel):
     availability: bool
     passenger_count: int
 
-    def __init__(self, id, current_location, fuel, availability, passenger_count):
-        self.id = id
-        self.current_location = current_location
-        self.fuel = fuel
-        self.availability = availability
-        self.passenger_count = passenger_count
