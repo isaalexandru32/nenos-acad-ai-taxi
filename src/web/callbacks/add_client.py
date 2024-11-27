@@ -31,7 +31,7 @@ def register_add_client_callbacks(app: Dash) -> None:
                 customer_id=client_id,
                 customer_location=customer_location,
                 desired_location=desired_location,
-                passenger_count=passenger_count,
+                passenger_count=passenger_count
             )
             response = requests.put(f"{API_URL}/animals", timeout=5, data=dto.json())
             return response.status_code

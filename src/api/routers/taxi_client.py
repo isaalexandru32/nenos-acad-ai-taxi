@@ -21,5 +21,5 @@ def add_client(dto: Client) -> Response:
         customer_location=dto.customer_location,
         desired_location=dto.desired_location,
         passenger_count=dto.passenger_count,
-        confirmation_message=dto.confirmation_message
+        #confirmation_message=dto.confirmation_message
     )

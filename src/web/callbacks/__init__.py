@@ -9,4 +9,4 @@ def register_all_callbacks(app: Dash) -> None:
     Register all component callbacks
     """
     # register_api_status_callbacks(app)
-    register_add_animal_callbacks(app)
+    register_add_client_callbacks(app)

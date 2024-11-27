@@ -26,7 +26,7 @@ app.layout = dmc.MantineProvider(
                 id='webapp-content',
                 children=[
                     # Loading().render()
-                    AddAnimalComponent().render()
+                    AddClientComponent().render()
                 ]
             ),
             # Page refresh
