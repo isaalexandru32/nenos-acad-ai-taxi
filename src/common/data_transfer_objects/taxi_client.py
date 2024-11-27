@@ -1,7 +1,7 @@
-from pylint import BaseModel
+from pydantic import BaseModel
 
 class Client(BaseModel):
-    current_location: str
+    customer_location: str
     desired_location: str
     customer_id: str
     passenger_count: int
