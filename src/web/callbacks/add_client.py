@@ -21,7 +21,7 @@ def register_add_client_callbacks(app: Dash) -> None:
             Input("add-customer-id", "value"),
             Input("add-customer-location", "value"),
             Input("add-customer-desired-location", "value"),
-            Input("aadd-passenger-count", "value"),
+            Input("add-passenger-count", "value"),
         ]
     )
     def send_client_info_to_api(_: int, client_id: int, client_location: str, cldesired_location: str, clpassenger_count: int):
