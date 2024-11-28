@@ -27,7 +27,7 @@ class AddClientComponent(DashAppBaseComponent):
                     w=200
                 ),
                 dmc.TextInput(
-                    id="aadd-passenger-count",
+                    id="add-passenger-count",
                     label="How many passengers?",
                     w=200
                 ),
