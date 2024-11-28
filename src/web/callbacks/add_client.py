@@ -24,16 +24,16 @@ def register_add_client_callbacks(app: Dash) -> None:
             Input("aadd-passenger-count", "value"),
         ]
     )
-    def send_client_info_to_api(_: int, client_id: int, customer_location: str, desired_location: str, passenger_count: int):
+    def send_client_info_to_api(_: int, client_id: int, client_location: str, cldesired_location: str, clpassenger_count: int):
         trigger = callback_context.triggered[0]
         if trigger["prop_id"].split('.')[0] == "add-client-button":
             dto = Client(
                 customer_id=client_id,
-                customer_location=customer_location,
-                desired_location=desired_location,
-                passenger_count=passenger_count
+                customer_location=client_location,
+                desired_location=cldesired_location,
+                passenger_count=clpassenger_count
             )
-            response = requests.put(f"{API_URL}/animals", timeout=5, data=dto.json())
+            response = requests.put(f"{API_URL}/taxi_client", timeout=5, data=dto.json())
             return response.status_code
 
         raise PreventUpdate

@@ -8,14 +8,14 @@ from src.api.routers.taxi_client import router as client_router
 
 # Create FastAPI app
 app = FastAPI(
-    title="Nenos Academy Shelter API",
-    description="An API used in the for the Nenos Academy Shelter App",
+    title="Nenos Academy Taxi AI API",
+    description="An API used in the for the Nenos Academy Taxi AI project App",
     version="1.0.0",
 )
 
 # Include routers
 app.include_router(status_router, prefix="/api", tags=["API"])
-app.include_router(client_router, prefix="/animals", tags=["Animals"])
+app.include_router(client_router, prefix="/taxi_client", tags=["Client"])
 
 # Run the app via uvicorn
 if __name__ == "__main__":
